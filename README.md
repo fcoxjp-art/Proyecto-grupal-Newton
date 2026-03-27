@@ -1,6 +1,7 @@
 
 🌏 Proyecto de Análisis: REST Countries API
 Este proyecto automatiza la extracción, limpieza y estructuración de datos globales utilizando la API pública REST Countries. El objetivo es transformar datos crudos en formato JSON en un dataset analizable para obtener insights geográficos y demográficos.
+
 🚀 Origen de los Datos
 Se ha utilizado la API REST Countries, un servicio gratuito que proporciona información detallada sobre los países del mundo.
 Endpoint Consumido
@@ -15,6 +16,7 @@ Region: Continente o región geográfica.
 Population: Población total.
 Area: Superficie total en km².
 Gini: Índice de desigualdad económica.
+
 🛠️ Procesamiento y Transformación
 El flujo de trabajo convierte una respuesta jerárquica (JSON) en una estructura tabular lista para el análisis estadístico.
 1. Extracción (ETL)
@@ -24,7 +26,8 @@ Durante la transformación, el script realiza las siguientes tareas críticas:
 Normalización: Desanidado de diccionarios complejos de la API.
 Ingeniería de Variables: Creación de la columna Densidad de Población (Población / Área).
 Gestión de Nulos: Tratamiento de datos faltantes o incompletos.
-3. Estructuración
+
+4. Estructuración
 Finalmente, los datos se cargan en un DataFrame de Pandas, permitiendo realizar:
 ✅ Análisis estadístico descriptivo.
 ✅ Agrupaciones por región o idioma.
