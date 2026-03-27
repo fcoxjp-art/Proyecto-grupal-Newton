@@ -1,49 +1,58 @@
-# Proyecto-grupal-Newton-Grupo-4
-Trabajo en equipo de José Pascual, Lucia Peláez, Lucia Llaneza, Alejandro Reyes, Michelle e Iván González
+
+🌏 Proyecto de Análisis: REST Countries API
+Este proyecto automatiza la extracción, limpieza y estructuración de datos globales utilizando la API pública REST Countries. El objetivo es transformar datos crudos en formato JSON en un dataset analizable para obtener insights geográficos y demográficos.
+🚀 Origen de los Datos
+Se ha utilizado la API REST Countries, un servicio gratuito que proporciona información detallada sobre los países del mundo.
+Endpoint Consumido
+Para optimizar la carga, se ha configurado el siguiente endpoint con filtros específicos:
+https://restcountries.com
+Variables Extraídas:
+Name: Nombre oficial del país.
+Capital: Capital o capitales administrativas.
+Currencies: Monedas de curso legal.
+Languages: Idiomas oficiales.
+Region: Continente o región geográfica.
+Population: Población total.
+Area: Superficie total en km².
+Gini: Índice de desigualdad económica.
+🛠️ Procesamiento y Transformación
+El flujo de trabajo convierte una respuesta jerárquica (JSON) en una estructura tabular lista para el análisis estadístico.
+1. Extracción (ETL)
+La petición se realiza mediante el método GET utilizando la librería requests de Python. Se incluye una validación de estado (raise_for_status()) para garantizar la integridad de la conexión antes de procesar los datos.
+2. Limpieza y Enriquecimiento
+Durante la transformación, el script realiza las siguientes tareas críticas:
+Normalización: Desanidado de diccionarios complejos de la API.
+Ingeniería de Variables: Creación de la columna Densidad de Población (Población / Área).
+Gestión de Nulos: Tratamiento de datos faltantes o incompletos.
+3. Estructuración
+Finalmente, los datos se cargan en un DataFrame de Pandas, permitiendo realizar:
+✅ Análisis estadístico descriptivo.
+✅ Agrupaciones por región o idioma.
+✅ Visualizaciones gráficas.
+✅ Muestreo de datos.
+python
+import pandas as pd
+# El resultado final es un objeto df listo para la acción:
+df = pd.DataFrame(rows)
+
+## EQUIPO 1:
 
 
-##  Entregable final de toda la clase
+## EQUIPO 2:
 
-##Jupyter comun de Newton (1 solo archivo entre todos):
 
-Seccion inicial: que API se ha usado y que endpoint se ha consumido.
-Seccion inicial: como se transforma la respuesta JSON en dataset analizable.
-Seccion A (Grupo 1): resumen descriptivo del dataset.
-Seccion B (Grupo 2): visualizaciones clave del mismo dataset.
-Seccion C (Grupo 3): inferencia basica sobre ese dataset.
-Seccion D (Grupo 4): correlacion/regresion simple sobre esas variables.
-Seccion final (equipo completo): 5 ideas clave que toda la clase debe llevarse.
+## EQUIPO 3:
 
-Regla de consistencia:
-Todos los grupos deben usar la API REST Countries, el endpoint v3.1/all y las mismas variables principales para facilitar la puesta en comun.
 
-## 7) Plan sugerido de trabajo martes a viernes
+## EQUIPO 4:
 
-## Martes
+En nuestro equipo nos hemos encargado de investigar correlacion-regresion, (dirección e intensidad). Regresión lineal simple. Interpretación básica de R2 y error. 
+Integrantes del equipo:
+- [Jose](https://github.com/josepuges)
+- [Lucía Llaneza](https://github.com/luciallaneza/luciallaneza)
+- [Michelle](https://github.com/michelleolivares86-tech)
+- [Alejandro](https://github.com/alexrey08)
+- [Iván](https://github.com/Asenjo76/) 
+- [Lucía Peláez](https://github.com/lucypelaez)
 
-Intro inicial por Eva.
-Reparto de grupos y tareas.
-Presentacion de la API obligatoria (REST Countries) y prueba del endpoint comun.
-Arranque del Jupyter de grupo.
-
-## Miercoles
-
-Avance de investigacion por grupo.
-Desarrollo del ejemplo en Jupyter.
-Puesta en comun rapida de bloqueos.
-
-## Jueves
-
-Cierre del Jupyter de grupo.
-Ensayo de explicacion (8-10 min por grupo).
-Preparacion del Jupyter comun.
-
-## Viernes
-
-Presentaciones de grupos.
-Integracion final del Jupyter comun.
-Cierre: resumen de conceptos para retomar tras el paron.
-
-## 8) Regla de claridad
-
-Si una compañera de otro grupo no puede entender vuestra explicacion, todavia no esta listo.
+Enlace a GitHub: https://github.com/Asenjo76/Proyecto-grupal-Newton
