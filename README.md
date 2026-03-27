@@ -1,4 +1,3 @@
-
 # 📊  🌏 Proyecto de Análisis: REST Countries API
 
 Este proyecto automatiza la extracción, limpieza y estructuración de datos globales utilizando la API pública REST Countries. El objetivo es transformar datos crudos en formato JSON en un dataset analizable para obtener insights geográficos y demográficos.
@@ -54,8 +53,43 @@ Nuestro análisis se ha centrado en los países europeos, escogiendo marcadores 
 
 ## EQUIPO 2:
 
+<p>En éste ejercicio los diferentes grupos tendrán que consultar una API gratuita "Restcountries". Proporciona información detallada sobre todos los paises del mundo en un formato fácil de leer para los ordenadores (JSON).
+Básicamente, es una gran base de datos pública a la que puedes "hacerle preguntas" a través de una URL.
+El trabajo del **Grupo II** consiste en distinguir las diferentes gráficas y espicificar su uso más recomendado.
+
+<h2><center>El Grupo II</h2>
+<p> El grupo II está formado por:  
+- ***Sara Bailón***
+- ***Arantxa Puig***
+- ***Fran Díaz***
+- ***Ágata Szlufcik***
+- ***Juan G.***  
+<h2><center>Librerias usadas</h2></center>
+Para éste proyecto se usaron las siguientes librerias:  
+- **requests** *para hacer peticiones a la API*
+- **numpy** *para cáculos numéricos*
+- **pandas** *para crear y manejar el DataFrame*
+- **matplotlib** *para gráficas básicas*
+- **seaborn** *para gráficas más visuales*
+- **squlite3** *para poder crear y manejar bases de datos*
+- **scipy** *para estadística y pruebas de hipótesis*
+*Éste archivo, fué probado y desarrollado con las siguientes versiones de las librerías, para evitar posibles errores aconsejamos la instalación de ellas.*
+pip install  requests==2.33.0 numpy==2.4.3 pandas==3.0.1 matplotlib==3.10.8 seaborn==0.13.2 scipy==1.17.1
+*Recomendamos crear un entorno virtual para la ejecución del ejercicio*
+
 ## EQUIPO 3:
 
+🎲 Probabilidad y distribuciones
+Probabilidad
+La probabilidad mide el grado de incertidumbre de un evento. En el análisis de datos, permite estimar qué tan probable es obtener un determinado resultado, generalmente a partir de una pregunta o hipótesis planteada.
+Distribuciones
+Las distribuciones describen cómo se reparten los valores o probabilidades de una variable, mostrando qué resultados son 
+
+- [Graciela]https://github.com/Graceila82 
+- [Krolina]https://github.com/KrolinaTF 
+- [Minina]https://github.com/MiniiNa 
+- [Alain]https://github.com/Alain-coder1 
+- [Francisco]https://github.com/ksu727096-maker
 
 ## EQUIPO 4:
 
