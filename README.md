@@ -81,7 +81,7 @@ pip install  requests==2.33.0 numpy==2.4.3 pandas==3.0.1 matplotlib==3.10.8 seab
 
 ## EQUIPO 3:
 
-🎲 Probabilidad y distribuciones
+# 🎲 Probabilidad y distribuciones
 
 ### Probabilidad
 
